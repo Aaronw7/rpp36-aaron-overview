@@ -1,10 +1,16 @@
 const express = require('express');
+const path = require('path');
 const db = require('../db/index.js');
 const app = express();
 
 app.get('/test', (req, res) => {
   res.send('this is working')
 })
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+app.use('/', express.static(path.resolve(__dirname, '/../client/dist')));
 
 app.get('/', (req, res) => {
   db.getProducts()

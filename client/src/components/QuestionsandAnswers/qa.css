@@ -1,0 +1,288 @@
+.qa-container {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  min-width: 300px;
+}
+
+.qa-search-container {
+  white-space: nowrap;
+}
+
+.qa-search {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 25px;
+  padding-top: 5px;
+}
+
+.qa-search::placeholder {
+  color: black;
+}
+
+.fa-search {
+  position: relative;
+  right: 25px;
+}
+
+.qa-label {
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.qa-text {
+  text-indent: -25px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.qa-date {
+  white-space: nowrap;
+}
+
+.qa-item-right {
+  display: inline-block;
+  width: 20%;
+  margin-top: 20px;
+  font-size: 11px;
+  vertical-align: top;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.qa-question {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: large;
+}
+
+.qa-answer {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.qa-user {
+  font-size: 11px;
+  margin-left: 4%;
+  margin-bottom: 15px;
+  text-indent: 0px;
+}
+
+.qa-bold {
+  font-weight: bolder;
+}
+
+.qa-add-question {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 520px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-add-question-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.qa-add-question-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.qa-add-question-subtitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.qa-add-question-x {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+}
+
+.qa-add-question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.qa-add-question-form label {
+  margin-top: 15px;
+}
+
+.qa-add-question-form input {
+  height: 40px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#qa-user-submit {
+  background-color: white;
+  width: 200px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.qa-more-answers {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  font-size: .75em;
+  font-weight: 800;
+}
+
+.qa-more-answers-item {
+  width: 200px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+p {
+  display: inline-block;
+}
+
+.qa-buttons {
+  margin-left: 25px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+.qa-buttons button {
+  margin-right: 20px;
+  height: 40px;
+  background-color: white;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.qa-add-question-form button {
+  margin-top: 20px;
+  height: 40px;
+  background-color: white;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.qa-add-button {
+  padding-right: 30px;
+  width: 173px;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.qa-plus {
+  font-size: 1.5em;
+  position: relative;
+  left: -27%;
+  top: 3px;
+}
+
+.qa-buttons div {
+  display: inline-block;
+}
+
+.qa-search div {
+  display: inline-block;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.qa-list {
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+.qa-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.qa-item:last-child {
+  padding-bottom: 15px;
+}
+
+.qa-answer-photo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+.qa-photo {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+.qa-photoview {
+  position: fixed;
+  z-index: 1;
+  top: 15vh;
+  left: 25vw;
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.qa-photoview-x {
+  display: inline-block;
+  margin-left: 98%;
+  margin-top: 2%;
+}
+
+.qa-add-photos {
+  z-index: 10;
+  width: 300px;
+  position: absolute;
+  background-color: white;
+  width: 70%;
+  height: 75%;
+}
+
+.qa-add-photos img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.qa-user-photos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.qa-user-photos img {
+  margin: 5px;
+}
+
+
