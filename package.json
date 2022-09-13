@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/index.js",
-    "build": "webpack -w",
-    "test": "jest"
+    "start": "nodemon server/server.js",
+    "test": "jest --coverage --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -27,8 +26,7 @@
     "mongoose": "^6.5.1",
     "nodemon": "^2.0.19",
     "pg": "^8.7.3",
-    "react": "^18.2.0",
-    "react-icons": "^4.4.0"
+    "supertest": "^6.2.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
